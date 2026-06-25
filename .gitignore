@@ -1,0 +1,60 @@
+﻿# -----------------------------
+# SpiritForms 1.0 Git safety
+# -----------------------------
+
+# NEVER commit live configuration or credentials
+nuconfig.php
+config.php
+.env
+*.env
+*.ini
+*.local
+*.bak
+*.backup
+
+# Ignore production/live database backups and exports
+database/backups/
+database/exports/
+*_backup.sql
+*_dump.sql
+*_live.sql
+*_production.sql
+*_prod.sql
+*.sql.gz
+
+# Uploaded evidence / client data
+uploads/
+*/uploads/
+Evidence/
+*/Evidence/
+Audio/
+Video/
+Photo/
+History/
+
+# Client reports and generated exports
+reports/
+exports/
+
+# Logs and temporary files
+logs/
+cache/
+tmp/
+temp/
+*.log
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Credentials / keys
+*.key
+*.pem
+*.crt
+*.p12
+*.pfx
+id_rsa
+id_rsa.pub

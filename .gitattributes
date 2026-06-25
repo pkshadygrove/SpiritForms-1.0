@@ -1,0 +1,19 @@
+# -----------------------------
+# SpiritForms 1.0 file handling
+# -----------------------------
+
+# SQL installer/database files should keep LF endings
+*.sql text eol=lf
+
+# Markdown/text files are normal text
+*.md text
+*.txt text
+
+# Binary package/document files
+*.zip binary
+*.odt binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
