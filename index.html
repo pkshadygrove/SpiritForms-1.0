@@ -1,23 +1,193 @@
 ﻿<!doctype html>
-<html lang=en>
+<html lang="en">
 <head>
-  <meta charset=utf-8>
-  <meta name=viewport content=width=device-width,initial-scale=1>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SpiritForms 1.0</title>
+  <style>
+    :root {
+      --bg: #070b14;
+      --bg-soft: #0d1424;
+      --panel: #111827;
+      --panel-2: #0f172a;
+      --text: #e5e7eb;
+      --muted: #a7b0c0;
+      --line: #263244;
+      --accent: #60a5fa;
+      --accent-2: #2563eb;
+      --accent-soft: #0b2540;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.26), transparent 34rem),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg-soft) 100%);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    .hero {
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 58px 20px 50px;
+      background: linear-gradient(135deg, rgba(15,23,42,0.98), rgba(30,58,138,0.86));
+    }
+
+    .wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      color: #bfdbfe;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.75rem;
+      line-height: 1.1;
+      color: #ffffff;
+    }
+
+    .hero p:last-child {
+      max-width: 830px;
+      margin: 18px 0 0 0;
+      color: #dbeafe;
+      font-size: 1.08rem;
+    }
+
+    main {
+      padding: 32px 20px 46px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 22px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 25px;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.35);
+    }
+
+    h2 {
+      margin: 0 0 12px;
+      color: #ffffff;
+      font-size: 1.45rem;
+    }
+
+    .lead {
+      margin: 0 0 17px;
+      color: var(--muted);
+    }
+
+    .button-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .button-list a {
+      display: block;
+      padding: 13px 16px;
+      border-radius: 11px;
+      background: linear-gradient(180deg, #3b82f6 0%, var(--accent-2) 100%);
+      border: 1px solid rgba(255,255,255,0.11);
+      color: #ffffff;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      box-shadow: 0 8px 18px rgba(37,99,235,0.24);
+    }
+
+    .button-list a:hover {
+      filter: brightness(1.1);
+    }
+
+    .doc-list {
+      margin: 12px 0 0;
+      padding-left: 20px;
+    }
+
+    .doc-list li {
+      margin-bottom: 10px;
+    }
+
+    .doc-list a {
+      color: #93c5fd;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .doc-list a:hover {
+      text-decoration: underline;
+    }
+
+    .note {
+      margin-top: 20px;
+      padding: 15px 16px;
+      border-left: 4px solid var(--accent);
+      border-radius: 11px;
+      background: var(--accent-soft);
+      color: #dbeafe;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: #8f9bb0;
+      font-size: 0.92rem;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <h1>SpiritForms 1.0</h1>
-  <p>SpiritForms 1.0 is a nuBuilder-based application for managing paranormal investigation cases, investigations, client access, uploaded evidence references, and completed reports.</p>
-  <h2>Downloads</h2>
-  <ul>
-    <li><a href=downloads/SpiritForms1.0.zip>Download SpiritForms 1.0 installation package</a></li>
-    <li><a href=downloads/Custom%20Files.zip>Download custom SpiritForms files</a></li>
-    <li><a href=downloads/CapturePageChromeExtension.zip>Download Capture Page Chrome Extension</a></li>
-  </ul>
-  <h2>Documentation</h2>
-  <ul>
-    <li><a href=docs/SpiritForms-1.0-Installation%20Guide.odt>Installation Guide</a></li>
-    <li><a href=docs/SpiritForms-1.0-User-Guide.odt>User Guide</a></li>
-  </ul>
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Public Release</p>
+      <h1>SpiritForms 1.0</h1>
+      <p>A nuBuilder-based application for managing paranormal investigation cases, client access, uploaded evidence references, and completed reports.</p>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="grid">
+      <section class="card">
+        <h2>Downloads</h2>
+        <p class="lead">Download the installation package and supporting files.</p>
+        <div class="button-list">
+          <a href="downloads/SpiritForms1.0.zip">SpiritForms 1.0 Installation Package</a>
+          <a href="downloads/Custom%20Files.zip">Custom SpiritForms Files</a>
+          <a href="downloads/CapturePageChromeExtension.zip">Capture Page Chrome Extension</a>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Documentation</h2>
+        <p class="lead">Open or download the guides before installing.</p>
+        <ul class="doc-list">
+          <li><a href="docs/SpiritForms-1.0-Installation%20Guide.odt">Installation Guide</a></li>
+          <li><a href="docs/SpiritForms-1.0-User-Guide.odt">User Guide</a></li>
+        </ul>
+        <div class="note">Start with the Installation Guide before installing. The User Guide explains roles, investigations, reports, client access, and the Chrome extension.</div>
+      </section>
+    </div>
+
+    <footer>SpiritForms 1.0 public release page</footer>
+  </main>
 </body>
 </html>
+
