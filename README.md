@@ -8,5 +8,6 @@ This public repository contains the SpiritForms installation package, documentat
 
 Copyright © 2026 Paul K. All rights reserved.
 
-SpiritForms 1.0 and its related files, documentation, images, report templates, screenshots, examples, and materials may not be copied, modified, redistributed, hosted, sold, or used commercially without written permission.
+SpiritForms 1.0 and its related files, documentation, images, report templates, screenshots, examples, and materials may not be copied, modified, redistributed, sold, publicly shared, or used commercially without written permission, except as needed to install and use SpiritForms for its intended purpose.
+
 
