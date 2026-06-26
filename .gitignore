@@ -58,3 +58,6 @@ desktop.ini
 *.pfx
 id_rsa
 id_rsa.pub
+
+# .ODT files
+docs/*.odt
